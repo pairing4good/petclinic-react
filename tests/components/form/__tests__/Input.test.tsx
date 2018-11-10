@@ -60,7 +60,7 @@ describe('Input', () => {
   });
 
   it('should render value', () => {
-      expect(input.find('input').props().value).toBe('blabla');
+    expect(input.find('input').props().value).toBe('blabla');
   });
 
   it('should be valid', () => {  
