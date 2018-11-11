@@ -8,6 +8,7 @@ import SelectInput from '../../../../src/components/form/SelectInput';
 
 describe('SelectInput', () => {
 
+
 	let object = null;
 	let noErrors = null;
 	let input = null;
@@ -77,9 +78,9 @@ describe('SelectInput', () => {
 		expect(input.find('.control-label').text()).toBe('My Field');
 	});
 
-  it('should be valid', () => {  
-    expect(input.find('.has-error').length).toBe(0);
-    expect(input.find(FieldFeedbackPanel).props().valid).toBe(true);
+	it('should be valid', () => {  
+		expect(input.find('.has-error').length).toBe(0);
+		expect(input.find(FieldFeedbackPanel).props().valid).toBe(true);
 	});
 
 	it('should render first options name', () => {
